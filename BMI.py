@@ -1,10 +1,10 @@
-name=input("Enter your name:")
-height_m=float(input("Enter your height in meter:"))
-weight_kg=float(input("Enter your weight in kilogram:"))
+name=input("\nEnter your name: ")
+height_in_m=float(input("\nEnter your height in meter: "))
+weight_in_kg=float(input("\nEnter your weight in kilogram: "))
+#formula
+bmi=weight_in_kg / height_in_m**2
 
-bmi=weight_kg / (height_m*height_m)
-
-print("Your BMI is:",bmi)
+print(f"\nYour BMI is: {bmi:.2f}")
 print(name,' ', end= "is")
 
 if bmi < 18.5:
